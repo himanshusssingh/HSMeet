@@ -14,6 +14,8 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { AuthContext } from '../contexts/AuthContext';
 import { Snackbar } from '@mui/material';
+import Spline from '@splinetool/react-spline';
+
 
 
 
@@ -70,20 +72,30 @@ export default function Authentication() {
         <ThemeProvider theme={defaultTheme}>
             <Grid container component="main" sx={{ height: '100vh' }}>
                 <CssBaseline />
-                <Grid
+                <Grid item
+                    xs={false}
+                    sm={4}
+                    md={7}
+                    sx={{height: "100vh"}}>
+                    <Spline scene="https://prod.spline.design/IBndb6VlXOIa6aAR/scene.splinecode" />
+
+                </Grid>
+
+                {/* <Grid
                     item
                     xs={false}
                     sm={4}
                     md={7}
                     sx={{
-                        backgroundImage: '/public/logo192.png' ? 'url(https://images.unsplash.com/photo-1734779206772-f21d663e96d5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' : '',
+                        
+                        // backgroundImage: '/public/logo192.png' ? 'url(https://images.unsplash.com/photo-1734779206772-f21d663e96d5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' : '',
                         backgroundRepeat: 'no-repeat',
                         backgroundColor: (t) =>
                             t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                     }}
-                />
+                /> */}
                 <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square style={{backgroundColor: "lightgray"}}>
                     <Box
                         sx={{

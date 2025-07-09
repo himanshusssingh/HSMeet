@@ -1,9 +1,11 @@
 import React from 'react'
 import "../App.css"
 import { Link, useNavigate } from 'react-router-dom'
+import Spline from '@splinetool/react-spline';
+
+
+
 export default function LandingPage() {
-
-
     const router = useNavigate();
 
     return (
@@ -39,9 +41,9 @@ export default function LandingPage() {
                         <Link to={"/auth"}>Get Started</Link>
                     </div>
                 </div>
-                <div>
+                <div className='image'>
 
-                    <img src="/videocall.avif" alt="" />
+                   <Spline className='spline' scene="https://prod.spline.design/92WZJcAPh2s0-7JF/scene.splinecode" />
 
                 </div>
             </div>

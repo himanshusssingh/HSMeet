@@ -55,10 +55,14 @@
   font-size: 1.7rem;
 }
 
-.landingMainContainer>div:nth-child(2) img {
-  height: 70vh;
-  width: 90%;
-  border-radius: 20px;
+.image {
+  height: 45vh;
+  width: 50%;
+}
+
+.spline {
+  border-radius: 30px;
+  background-color: #faf9f9;
 }
 
 .navBar {
