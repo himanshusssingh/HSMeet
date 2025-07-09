@@ -82,7 +82,11 @@ npm install
 cd ../frontend  
 npm install  
 
-### 4. Run the App Locally  
+### 4. Setup Environment Variables
+Create a .env file inside the backend/ directory with the following variables:  
+MONGO_URI=your_mongodb_connection_string  
+
+### 5. Run the App Locally  
 Start Backend  
 - cd backend  
 - npm run dev  
